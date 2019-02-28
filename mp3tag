@@ -1,0 +1,41 @@
+Converting tags and filenames.
+
+## Tag - Filename
+
+$num(%track%,2) - %title%
+%artist% - %album% - $num(%track%,2) - %title%
+
+## Tag - Filename
+
+%track% %title%
+
+## Filename - Filename
+
+Old file pattern: %1 %2 %3 %4 %5 %6 %7 %8 %9
+New file pattern: %1 %6 %7 %8 %9
+
+## Tag - Tag
+
+Field: TRACK
+$num(%track%,2)
+$regexp(%TRACK%,/(?!.*/).*,[0-9][0-9])
+$regexp(%TRACK%,/\d*$,)
+$regexp(%TRACK%,\.,)
+%track%
+
+Field: YEAR
+$num(%YEAR%,4)
+
+Field: DISCNUMBER
+Format string: $regexp(%DISCNUMBER%,/\d*$,)
+
+Field: DISCNUMBER
+$regexp(%DISCNUMBER%,/\d*$,)
+
+Field: TITLE
+$regexp(%title%,\s\d\d?:\d\d?$,)
+$regexp(%title%,\s\d\d?-\d\d?,)
+$regexp(%TITLE%,\s\d-\d+$,)
+$regexp(%TITLE%,^.+\s*-\s,)
+$regexp(%title%,^\d\d?\s,)
+$regexp(%title%,^\d\d?\s-\s,)
