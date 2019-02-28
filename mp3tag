@@ -41,8 +41,26 @@ $regexp(%TITLE%,^.+\s*-\s,)
 $regexp(%title%,^\d\d?\s,)
 $regexp(%title%,^\d\d?\s-\s,)
 
-If you are finished, use the following to create a folder structure:
+## Uppercase every first letter:
+
+CTRL+A
+Convert -> Action: Case Conversion -> OK
+
+## Replace all whitespaces with - in Genre:
+
+CTRL+A
+Actions (quick) -> Replace
+Field: GENRE
+Original: INSERT A WHITESPACE
+Replace with: -
+-> OK
+
+## If you are finished, use the following to create a folder structure:
 
 ## Tag - Filename
 
 d:\music\%artist%\%year% - %album%$num(%track%,2) - %title%
+
+## Now lets get some album covers in our new structure:
+
+UPCOMING NEXT
