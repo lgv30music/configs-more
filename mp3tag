@@ -8,6 +8,7 @@ $num(%track%,2) - %title%
 ## Tag - Filename
 
 %track% %title%
+%track%. %title%
 
 ## Filename - Filename
 
@@ -39,3 +40,9 @@ $regexp(%TITLE%,\s\d-\d+$,)
 $regexp(%TITLE%,^.+\s*-\s,)
 $regexp(%title%,^\d\d?\s,)
 $regexp(%title%,^\d\d?\s-\s,)
+
+If you are finished, use the following to create a folder structure:
+
+## Tag - Filename
+
+d:\music\%artist%\%year% - %album%$num(%track%,2) - %title%
