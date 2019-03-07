@@ -59,6 +59,7 @@ Replace with: -
 
 ## Tag - Filename
 
+WARNING: THIS IS DESTRUCTIVE! IT MOVES FILES INSTEAD OF COPYING THEM!!!!!!
 E:\music\%artist%\%year% - %album%\$num(%track%,2) - %title%
 
 ## Now lets get some album covers in our new structure:
