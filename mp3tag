@@ -59,7 +59,7 @@ Replace with: -
 
 ## Tag - Filename
 
-d:\music\%artist%\%year% - %album%$num(%track%,2) - %title%
+E:\music\%artist%\%year% - %album%\$num(%track%,2) - %title%
 
 ## Now lets get some album covers in our new structure:
 
