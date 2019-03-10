@@ -1,0 +1,10 @@
+## Install dependencies:
+
+sudo pacman -S pulseaudio-alsa pulseaudio-bluetooth bluez bluez-libs bluez-utils pulseaudio-bluetooth
+yaourt ofono
+yaourt paprefs
+
+## Use audio simultaniously:
+
+$paprefs
+-> checkbox: simultanious output
